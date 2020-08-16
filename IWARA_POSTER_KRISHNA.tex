@@ -1,0 +1,145 @@
+\documentclass[25pt,a0paper, landscape]{tikzposter}
+\tikzposterlatexaffectionproofoff
+% theme and color palette
+%\usetheme{Envelope}
+%\usetheme{Autumn}
+%\usetheme{Wave}
+%\usetheme{Rays}
+%Autumn, Basic, Board, Desert, Envelope, Rays, Simple, Wave
+%\usetheme{Rays}
+%\usetheme{Default}
+\usetheme{Metropolis}
+%\usecolorstyle{127678}
+%colorstyle Default,Australia,Britain,Sweden,Spain,Russia,Denmark,Germany.
+%\usecolorstyle[colorPalette=BlueGrayOrange]{Germany}
+\usecolorstyle {Australia}
+
+%--------------><-------------------------><--------------------------------------
+%---------------------------------------------------------------------------------
+%--------------><-------------------------><--------------------------------------
+
+
+% packages
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{lipsum}
+\usepackage{amsmath}
+\usepackage{url}
+% optional style features
+%\usepackage{lscape}
+\usetitlestyle{Empty}
+%\useblockstyle{Envelope}
+%\useinnerblockstyle{Envelope}
+\usebackgroundstyle{Rays}
+%\definebackgroundstyle{samplebackgroundstyle}{
+%\draw[inner sep=1pt, line width=1pt, color=blue, fill=backgroundcolor!30!blue]
+%(bottomleft) rectangle (topright);
+%}
+\def\ba{\begin{eqnarray}}
+\def\ea{\end{eqnarray}}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+%\newcommand{\eqref}[1]{{(\ref{#1})}}
+%--------------><-------------------------><--------------------------------------
+%---------------------------------------------------------------------------------
+%--------------><-------------------------><--------------------------------------
+
+
+%\begin{landscape}
+\begin{document}
+\title{\fontsize{3.5cm}{3.5cm}{\bf 3D QCD Phase Diagrams}}
+\author{{\textbf{\underline {Krishna Aryal \& Veronica Dexheimer}}}}
+\institute{
+\bf {\fontsize{40}{40}\selectfont{Kent State University, Kent, OH, USA}\\  \vspace{2mm}
+\url {karyal@kent.edu} \& \url{vdexheim@kent.edu}}
+}
+\maketitle
+
+
+
+\begin{columns} 
+\column{0.33}
+%--------------><-------------------------><--------------------------------------
+%---------------------------------------------------------------------------------
+%--------------><-------------------------><--------------------------------------
+
+
+\block {\textcolor{yellow}{\huge{Abstract}}}
+{\fontsize{44}{44}\selectfont {\hspace{1cm}We investigate the phase transition from hadron to quark matter in the general case without the assumption of chemical (beta) equilibrium with respect to weak decays. In this case, a new independent axis arises, which is related to charge/isospin. For this work, we make use of Chiral Mean Field (CMF) model [1] that incorporates chiral symmetry restoration and deconfinement to quark matter to determine how charge and isospin fractions affect the phase transition expected to exist in protoneutron stars, neutron star-mergers, and heavy-ion collisions [2].}}
+
+
+%--------------><-------------------------><--------------------------------------
+%---------------------------------------------------------------------------------
+%--------------><-------------------------><--------------------------------------
+
+
+\block{\textcolor{yellow}{\huge{Heavy ion case}}}
+{\fontsize{44}{44}\selectfont { \hspace{1cm}As net strangeness fraction $(Y_S)$ has no time to be created in heavy-ion collisions, the free energy per baryon of the system is simply $\tilde{\mu} = \mu_B +Y_Q \mu_Q$, where $\mu_Q$ is the charge chemical potential. This is the quantity that is the same on both sides of a first-order phase transition coexistence line, as the baryon chemical potential $(\mu_B)$ is usually not. $ {\tilde{\mu}}$ at the deconfinement depends on the charge fraction $(Y_Q)$, varying by about 50 MeV (for a given temperature, T) when $Y_Q$ goes from 0 to 0.5. Over {T $\sim$ 160 MeV} we expect a critical point beyond which the first-order phase transition becomes a smooth crossover.}\vspace{1cm}
+{
+\centerline{
+{\includegraphics[scale=1.6]{figures/2hifs1.pdf}}	
+}}}
+\vspace{.8cm}
+
+%--------------><-------------------------><--------------------------------------
+%---------------------------------------------------------------------------------
+%--------------><-------------------------><--------------------------------------
+
+
+\column{0.34} 
+\block{\textcolor{yellow}{\huge{{Stellar case }}}}{{\fontsize{44}{44}\selectfont  \hspace{1cm}As net strangeness is created in neutron stars $(Y_S\neq 0)$, the structure of the respective phase diagrams change, specially at large temperatures. These temperatures can be achieved in protoneutron stars (at large $Y_Q$) or neutron star-mergers (at small $Y_Q$)   [3]. For strange matter, the relation between charge fraction and isospin fraction becomes non-trivial [2]\vspace{5mm}
+	\begin{equation*}
+	Y_I=Y_Q-\frac{1}{2}+Y_S.
+	\end{equation*}
+\fontsize{43}{43}\selectfont Below, we show a comparison of the top slices of the 3D phase diagrams for $(Y_S= 0)$ and $(Y_S\neq 0).$\vspace{1.8cm}}
+\centerline{
+	\includegraphics[width=0.82\linewidth]{figures/fig_15_higher_temp1.pdf}}
+	\vspace{2cm}
+\centerline{
+	\includegraphics[width=0.82\linewidth]{figures/fig_37_higher_temp1.pdf}}
+	
+	
+
+}
+\vspace{1cm}
+
+%--------------><-------------------------><--------------------------------------
+%---------------------------------------------------------------------------------
+%--------------><-------------------------><--------------------------------------
+
+
+\column{0.33} 
+\block{\textcolor{yellow}{\huge{Conclusions}}}
+{\fontsize{44}{44}\selectfont
+\hspace{1cm} We discussed how deconfinement to quark matter is affected by charge or isospin fractions (amount of electric charge/isospin per baryon in the system) and how these fractions relate to each other. The latter becomes non-trivial in the case of a non-zero net strangeness. This discussion is extremely timely as, historically, the heavy-ion collision community has modeled their systems in terms of fixed isospin fraction with no net strangeness, while the astrophysical community has modeled them in terms of charge fraction (equal to the electron fraction when muons are not included) with net strangeness, whereas now these communities are working together to understand the hot and dense matter generated in neutron star mergers and in low energy heavy-ion collisions .\vspace{5mm}
+}
+
+
+%--------------><------------------------><-----------------------------
+%----------------------------------------------------------------------
+%--------------><-------------------------><--------------------------------------
+
+
+\block{\textcolor{yellow}{\huge{Acknowledgements and references}}}
+{\fontsize{40}{40}\selectfont
+\hspace{1cm}Support for this research came from the National Science Foundation under grant PHY-1748621, PHAROS (COST Action CA16214), and the LOEWE-Program in HIC for FAIR.
+\vspace{5mm}
+\begin{enumerate}
+\item{Dexheimer, V. A., \& Schramm, S. (2010). Novel approach to modeling hybrid stars. Physical Review C, 81(4), 045201.}\vspace{9mm}
+\item {Aryal, K., Constantinou, C., Farias, R.L., \& Dexheimer, V. (2020). QCD Phase Diagrams with Charge and Isospin Axes under Heavy-Ion Collision and Stellar Conditions. arXiv: Nuclear Theory.}\vspace{9mm}
+\item {Most, E. R., Papenfort, L. J., Dexheimer, V., Hanauske, M., Stoecker, H., \& Rezzolla, L. (2020). On the deconfinement phase transition in neutron-star mergers. The European Physical Journal A, 56(2), 1-11.}
+\end{enumerate}
+\vspace{3.1cm}
+\center{
+\includegraphics[scale=1]{logos/12345.png}}
+\vspace{2mm}
+}
+
+\end{columns}
+\end{document}
+
+%--------------><-------------------------><--------------------------------------
+%---------------------------------------------------------------------------------
+%--------------><-------------------------><--------------------------------------
